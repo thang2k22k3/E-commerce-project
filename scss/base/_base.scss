@@ -1,12 +1,29 @@
-*, ::before, ::after{
-    box-sizing: border-box;
+*,
+::before,
+::after {
+  box-sizing: border-box;
 }
 
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
 
-body{
-    font-size: 1.6rem;
-    font-family: "Roboto Slab", serif;
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto Slab", serif;
+  color: var(--text-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+}
+
+.navbar__link:hover .icon {
+  filter: var(--icon-color);
 }

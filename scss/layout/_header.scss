@@ -1,0 +1,125 @@
+@use "../abstracts";
+
+.header {
+  background: var(--header-bg-color);
+  padding: 28px 0;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 0 auto;
+
+  width: 799px;
+  height: 44px;
+
+  border-radius: 4px;
+  border: 1px solid #fff;
+  background: var(--search-bg-color);
+
+  &-input {
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    border-radius: inherit;
+
+    &::placeholder {
+      color: var(--input-placeholder);
+      font-family: Manrope;
+      font-size: 1.4rem;
+      line-height: 171.429%;
+    }
+  }
+
+  &-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    width: 66px;
+    height: 38px;
+    background: var(--search-btn-bg);
+    margin-right: 2px;
+
+    border-radius: inherit;
+
+    &:hover {
+      opacity: 0.9;
+      cursor: pointer;
+    }
+  }
+}
+
+.top-act {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: space-between;
+
+  &__group {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  &__btn,
+  &__user {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__title {
+    color: #fff;
+    font-family: Manrope;
+    font-size: 1.6rem;
+    line-height: 175%;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  margin-top: 22px;
+
+  &__list {
+    display: flex;
+    // gap: 40px;
+
+    width: 799px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    padding: 6px 20px;
+    color: #fff;
+    font-family: Manrope;
+    font-size: 1.6rem;
+    line-height: 175%;
+
+    &:hover {
+      color: #ffd44d;
+    }
+  }
+
+  &__arrow {
+    margin-top: 2px;
+  }
+}
